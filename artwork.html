@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History of art</title>
+
+    <!--========== FAVICON ==========-->
+
+
+    <!--========== REMIX ICONS ==========-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--========== CSS ==========-->
+    <!-- locomotive-scroll -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.2.5/dist/locomotive-scroll.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.2.5/dist/locomotive-scroll.min.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body id="js-scroll">
+    <!--========== HEADER ==========-->
+    <nav class="nav">
+        <a href="index.html" class="nav__logo">Tmk
+
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="index.html" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="about.html" class="nav__link">About</a>
+                </li>
+                <li class="nav__item">
+                    <a href="main.html" class="nav__link">Main</a>
+                </li>
+                <li class="nav__item">
+                    <a href="artwork.html" class="nav__link">Artworks</a>
+                </li>
+            </ul>
+            <div class="nav__close" id="nav-close">
+                <i class="ri-close-line"></i>
+            </div>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+        </div>
+    </nav>
+
+    <!--========== ARTWORK ==========-->
+    <section class="artwork__container container" data-scroll-section>
+        <div class="artwork__head" data-scroll>
+            <h1 class="artwork__move">Caravaggio</h1>
+            <div class="artwork__title" data-scroll data-scroll-speed="2">
+                <img src="/img/main/Caravaggio_01.jpg" alt="" class="title">
+                <div class="summary">
+                    <h2 class="artwork__heading">Summary of Caravaggio</h2>
+                    <p class="artwork__description">The intensity of Caravaggio's paintings was matched only by his tempestuous lifestyle. Despite being a hot-headed, violent man often in trouble with the law and implicated in more than one murder, he created striking, innovative paintings and pioneered the use of dramatic lighting and the representation of religious figures in modern clothes and attitudes. Working from life and without the aid of preparatory sketches, Caravaggio paired close observation of his models with the use of strong beams of light to focus attention on certain elements of his images, contrasting these well-lit areas with dark shadows elsewhere on the canvas. This use of chiaroscuro became a core part of Caravaggio's highly individualized style and was widely imitated by his contemporaries. Even though he only lived until the age of 39, Caravaggio had a profound influence on the painters around him and on later art movements, notably Baroque art and 19th-century Realism.</p>
+                </div>
+                
+            </div>
+            
+            <div class="artwork__group artwork__group1" data-scroll data-scroll-speed="1">
+                <img src="/img/art work/Caravaggio/786px-Self-portrait_as_the_Sick_Bacchus_by_Caravaggio.jpg" alt="#" class="group1__1 cover" data-scroll data-scroll-speed="2">
+                <img src="/img/art work/Caravaggio/762px-Caravaggio_-_Boy_Bitten_by_a_Lizard.jpg" alt="#" class="group1__2 cover" data-scroll data-scroll-speed="4">
+                <img src="/img/art work/Caravaggio/1010px-Caravaggio_-_I_MusiciFXD.jpg" alt="#" class="group1__3 cover" data-scroll data-scroll-speed="3">
+                <img src="/img/art work/Caravaggio/Medusa_by_Carvaggio.png" alt="#" class="group1__4 cover" data-scroll data-scroll-speed="2">
+                <img src="/img/art work/Caravaggio/The_Calling_of_Saint_Matthew-Caravaggo_(1599-1600).jpg" alt="#" class="group1__5 cover" data-scroll data-scroll-speed="4">
+                <img src="/img/art work/Caravaggio/The_Deposition_by_Caravaggio.jpg" alt="#" class="group1__6 cover" data-scroll data-scroll-speed="3">
+                <img src="/img/art work/Caravaggio/1280px-Michelangelo-Caravaggio_021_Beheading-of-St-John-the-Baptist_cropped.jpg" alt="#" class="group1__7 cover" data-scroll data-scroll-speed="2">
+
+                <div class="artwork__icon">
+                    <a href="#">NEXT</a>
+                    <i class="ri-arrow-right-line artwork__icons"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="/js/main.js"></script>
+    <script>
+        // smooth scroll 
+        const scroll = new LocomotiveScroll({
+            el: document.querySelector('#js-scroll'),
+            smooth: true,
+            smoothMobile: true,
+            inertia: 0.3
+        });
+    </script>
+</body>
+</html>

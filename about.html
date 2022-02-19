@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History of art</title>
+
+    <!--========== FAVICON ==========-->
+
+
+    <!--========== REMIX ICONS ==========-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.2.5/dist/locomotive-scroll.min.js"></script>
+</head>
+<body id="js-scroll">
+    <!--========== HEADER ==========-->
+    <nav class="nav">
+        <a href="index.html" class="nav__logo">Tmk
+
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="index.html" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="about.html" class="nav__link">About</a>
+                </li>
+                <li class="nav__item">
+                    <a href="main.html" class="nav__link">Main</a>
+                </li>
+                <li class="nav__item">
+                    <a href="artwork.html" class="nav__link">Artworks</a>
+                </li>
+            </ul>
+            <div class="nav__close" id="nav-close">
+                <i class="ri-close-line"></i>
+            </div>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+        </div>
+    </nav>
+
+    <!--========== ABOUT ==========-->
+    <main class="main" data-scroll-section>
+        <section class="about container">
+            <img src="/img/Group 3.png" alt="#about" class="about__tab">
+            <div class="about__head" data-scroll>
+                <div class="about__data" data-scroll>
+                    <h1 class="about__title">ABOUT</h1>
+                    <p class="about__description">In 1527 Europe, religious dominance had the power to direct and inform the content and climate of society's artistic output. At the time, a backlash against the conservative Protestant Reformation was compelled by the Catholic Church to re-establish its importance and grandeur within society. Artists followed suit by reviving <mark class="about__mark">Renaissance</mark> ideals of beauty, infusing into the era's artwork, music, and architecture a revived nod to classicism further enhanced by a new exuberant extravagance and penchant for the ornate. This highly embellished style was coined Baroque and became marked by its innovative techniques and details, delivering a lush new visual language into what had been a relatively toned down period for art.</p>
+                    <p class="about__description">Baroque disseminated throughout Europe, primarily led by the Pope in Rome and Catholic rulers in Italy, France, Spain, and Flanders. It was further disseminated by powerful religious orders through their extensive network of monasteries and convents. The style spread rapidly to France, northern Italy, Spain and Portugal, then to Austria and southern Germany.</p>
+                </div>
+                <div class="imm layer">
+                    <img src="/img/background_about.png" alt="#about" class="about__img">
+                    <img src="/img/about1.png" alt="#about" class="about__img1 layer" data-speed="2">
+                    <img src="/img/about2.png" alt="#about" class="about__img2 layer"data-speed="-2">
+                    <img src="/img/about3.png" alt="#about" class="about__img3 layer"data-speed="0.5">
+                    <p class="about__credit1">Claude Lorrain - Harbour Scene at Sunset  (1604/1605-1682)</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="/js/main.js"></script>
+    <script src="/js/parallax2.js"></script>
+    <script>
+        // smooth scroll 
+        const scroll = new LocomotiveScroll({
+            el: document.querySelector('#js-scroll'),
+            smooth: true,
+            smoothMobile: true,
+            inertia: 0.3
+        });
+    </script>
+</body>
+</html>
